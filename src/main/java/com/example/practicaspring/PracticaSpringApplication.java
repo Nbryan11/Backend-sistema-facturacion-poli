@@ -24,6 +24,7 @@ public class PracticaSpringApplication {
                 @Override
                 public void addCorsMappings(CorsRegistry registry) {
                     registry.addMapping("/**")
+                            .allowedOrigins("*") //  Permite peticiones de cualquier dominio
                             .allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH");
                 }
             };
